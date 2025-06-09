@@ -10,6 +10,17 @@ A full-stack web application for managing personal finances, built with MERN sta
 - CSV import support
 - User authentication
 
+## some screenshots
+
+- ![image](https://github.com/user-attachments/assets/26c657b0-e4b0-4faa-9fbf-e9b95d36646f)
+
+- ![image](https://github.com/user-attachments/assets/8e8da9d4-031e-4c73-adf9-f90437c30121)
+
+- ![image](https://github.com/user-attachments/assets/cf077dda-4a17-4d86-8734-2d1d77815df3)
+
+
+
+
 ## Setup
 
 1. Clone the repository
