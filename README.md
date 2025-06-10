@@ -170,11 +170,11 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👥 Contact
 
-- GitHub: [@yourusername](https://github.com/yourusername)
-- Email: your.email@example.com
+- GitHub: [@ArunKumar5050](https://github.com/ArunKumar5050)
+- Email: arunprajapat629@gmail.com
 
 ---
 
 <div align="center">
-  <p>Made with ❤️ by [Your Name]</p>
+  <p>Made with ❤️ by [Arun Prajapat]</p>
 </div>
