@@ -40,6 +40,15 @@ FinBot is a comprehensive personal finance management application that helps use
 - 🔐 Secure authentication
 - 📤 CSV data export
 
+## ScreenShots
+
+- ![image](https://github.com/user-attachments/assets/a4e4cdaf-c848-4b84-8337-d34dcf8ae686)
+- ![image](https://github.com/user-attachments/assets/77b021ec-8172-4550-99f4-c63bcbb13497)
+- ![image](https://github.com/user-attachments/assets/9c628815-57a1-433c-beac-72db06ef910f)
+
+
+
+
 ## 🏗️ System Architecture
 
 ```mermaid
