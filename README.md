@@ -1,35 +1,81 @@
-# FinBot - Personal Finance Manager
+# FinBot - Personal Finance Manager 📊
 
-A full-stack web application for managing personal finances, built with MERN stack.
+<div align="center">
+  <img src="client/public/logo.png" alt="FinBot Logo" width="200"/>
+  <p><strong>Your Personal Finance Tracking Solution</strong></p>
+</div>
 
-## Features
+## 📑 Table of Contents
+- [Overview](#overview)
+- [Features](#features)
+- [System Architecture](#system-architecture)
+- [Technology Stack](#technology-stack)
+- [Installation](#installation)
+- [Environment Setup](#environment-setup)
+- [Usage Guide](#usage-guide)
+- [API Documentation](#api-documentation)
+- [Contributing](#contributing)
 
-- Transaction tracking
-- Income/Expense analytics
-- Monthly reports
-- CSV import support
-- User authentication
+## 🎯 Overview
 
-## some screenshots
+FinBot is a comprehensive personal finance management application that helps users track their income, expenses, and financial goals. With an intuitive interface and powerful features, it makes financial management accessible and efficient.
 
-- ![image](https://github.com/user-attachments/assets/26c657b0-e4b0-4faa-9fbf-e9b95d36646f)
+## ✨ Features
 
-- ![image](https://github.com/user-attachments/assets/8e8da9d4-031e-4c73-adf9-f90437c30121)
+### 1. Transaction Management
+- 📋 Import transactions from CSV files (PhonePe statement compatible)
+- 💰 Track income and expenses
+- 🏷️ Automatic transaction categorization
+- 📊 Detailed transaction history
 
-- ![image](https://github.com/user-attachments/assets/cf077dda-4a17-4d86-8734-2d1d77815df3)
+### 2. Financial Analytics
+- 📈 Monthly income/expense charts
+- 💹 Trend analysis
+- 📊 Category-wise expense breakdown
+- 💸 Real-time balance tracking
 
+### 3. User Experience
+- 🌓 Dark mode interface
+- 📱 Responsive design
+- 🔐 Secure authentication
+- 📤 CSV data export
 
+## 🏗️ System Architecture
 
+```mermaid
+graph TD
+    A[Client - React] -->|API Requests| B[Express Server]
+    B -->|Queries| C[MongoDB Atlas]
+    B -->|Authentication| D[JWT]
+    E[CSV Import] -->|Data Processing| B
+    B -->|Response| A
+```
 
-## Setup
+## 🛠️ Technology Stack
 
-1. Clone the repository
+### Frontend
+- **React** - UI library
+- **Redux Toolkit** - State management
+- **TailwindCSS** - Styling
+- **Recharts** - Data visualization
+- **Papa Parse** - CSV parsing
+
+### Backend
+- **Node.js** - Runtime environment
+- **Express** - Web framework
+- **MongoDB Atlas** - Database
+- **JWT** - Authentication
+- **Mongoose** - ODM
+
+## 📥 Installation
+
+1. **Clone the Repository**
 ```bash
 git clone https://github.com/yourusername/FinBot.git
 cd FinBot
 ```
 
-2. Install dependencies
+2. **Install Dependencies**
 ```bash
 # Install server dependencies
 cd server
@@ -40,22 +86,95 @@ cd ../client
 npm install
 ```
 
-3. Environment Setup
-- Copy `.env.example` to `.env` in both client and server directories
-- Update the environment variables with your values
+## ⚙️ Environment Setup
 
-4. Run the application
+1. **Server Configuration** (.env)
+```env
+PORT=5000
+MONGODB_URI=your_mongodb_atlas_uri
+JWT_SECRET=your_secret_key
+```
+
+2. **Client Configuration** (.env)
+```env
+REACT_APP_API_URL=http://localhost:5000
+```
+
+## 📱 Usage Guide
+
+### 1. User Authentication
+- Register with email and password
+- Login to access features
+- Secure JWT-based sessions
+
+### 2. Transaction Management
+```mermaid
+flowchart LR
+    A[Upload CSV] --> B[Parse Data]
+    B --> C[Validate]
+    C --> D[Store in DB]
+    D --> E[Update UI]
+```
+
+### 3. CSV Import Steps
+1. Download statement from PhonePe
+2. Click "Upload CSV" in FinBot
+3. Select your statement file
+4. Verify imported transactions
+
+### 4. Analytics Features
+- View monthly summaries
+- Track spending patterns
+- Export reports
+
+## 🔌 API Documentation
+
+### Authentication Endpoints
+```http
+POST /api/auth/register
+POST /api/auth/login
+GET /api/auth/profile
+```
+
+### Transaction Endpoints
+```http
+POST /api/transactions/import
+GET /api/transactions
+POST /api/transactions
+DELETE /api/transactions/:id
+```
+
+## 💻 Development
+
 ```bash
-# Run server (from server directory)
+# Run development server
+cd server
 npm run dev
 
-# Run client (from client directory)
+# Run client
+cd client
 npm start
 ```
 
-## Tech Stack
+## 🤝 Contributing
 
-- Frontend: React, TailwindCSS
-- Backend: Node.js, Express
-- Database: MongoDB
-- Authentication: JWT
+1. Fork the repository
+2. Create feature branch
+3. Commit changes
+4. Push to branch
+5. Open pull request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 👥 Contact
+
+- GitHub: [@yourusername](https://github.com/yourusername)
+- Email: your.email@example.com
+
+---
+
+<div align="center">
+  <p>Made with ❤️ by [Your Name]</p>
+</div>
